@@ -1,4 +1,6 @@
 module.exports = {
-    distDir: './build',
-  };
-  
+  distDir: "./build",
+  devIndicators: {
+    buildActivity: false,
+  },
+};
