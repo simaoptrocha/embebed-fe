@@ -143,6 +143,7 @@ export const chains = [
     label: 'Polygon Amoy',
     rpcUrl: 'https://polygon-amoy.drpc.org/',
     logo: polygonLogo,
+    icon: 'polygon_logo',
     env: 'testnet',
     name: 'polygon',
     defaultToken: 'agEUR', // something different
