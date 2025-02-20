@@ -1,7 +1,7 @@
 (function (global) {
   // SimpleWidget Class
   class SimpleWidget {
-    baseUrl = "https://patient-humpback-endless.ngrok-free.app" 
+    baseUrl = "https://master.d25bf92tcete3s.amplifyapp.com" 
     constructor({ variant, containerNodeSelector, walletAddress, chain, token, options }) {
       if (!variant) {
         throw new Error("Variant is required to initialize the widget.");

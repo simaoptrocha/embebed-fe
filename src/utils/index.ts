@@ -238,7 +238,7 @@ export const createSiweMessage = async (signer: Signer, chain: number) => {
     //       return 'https://dev.getunblock.com/auth/login';
     //   }
     // })();
-    const url = 'https://patient-humpback-endless.ngrok-free.app/';
+    const url = 'hhttps://master.d25bf92tcete3s.amplifyapp.com//';
 
     const walletAddress = await signer?.getAddress();
     const domainUrl = new URL(url);
