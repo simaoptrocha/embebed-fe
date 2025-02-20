@@ -1,18 +1,12 @@
-import { useState, useEffect } from 'react';
-import { ethers } from 'ethers';
+import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
 import { getChains } from '@/src/utils/index';
-
-import DropdownList from './common/DropdownList/DropdownList';
-import FlexButton from './common/FlexButton/FlexButton';
-
 import styles from '@/styles/Navbar.module.css';
 
 export default function Navbar() {
   const networks = getChains().map((chain) => ({ ...chain, disabled: false }));
-  const { connectToWallet, disconnectWallet, wallet, chain, setChain } = useWallet();
   const [placeholder, setPlaceholder] = useState('');
   const [hoverButton, setHoverButton] = useState(false);
 

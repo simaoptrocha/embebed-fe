@@ -4,9 +4,9 @@ import styles from './textInput.module.css';
 
 export type TextInputProps = {
   value: string;
-  label: string;
+  label?: string;
   placeholder?: string;
-  onChange: Function;
+  onChange?: Function;
   type?: HTMLInputTypeAttribute;
   error?: string;
   autoFocus?: boolean;
@@ -39,7 +39,7 @@ export const TextInput = ({
         type={type}
         value={value}
         placeholder={placeholder}
-        onChange={(event) => onChange(event)}
+        onChange={(event) => onChange?.(event)}
         readOnly={readOnly} // Apply the readOnly attribute
       />
       <div className={styles.error}>{error}</div>

@@ -55,6 +55,7 @@ export default function SelectNetwork() {
 
   useEffect(() => {
     const query = new URLSearchParams(`?${asPath.split('?')[1] ?? ''}`);
+    // @ts-ignore
     setPrevNetwork(validChains.find(({ name }) => name === query.get('switch_network') ?? false));
     setCurrency(query.get('currency')?.toUpperCase() ?? 'fiat');
     // eslint-disable-next-line react-hooks/exhaustive-deps
